@@ -2,9 +2,13 @@
 
 ShodanX ⚡ is a versatile information gathering tool that harnesses the power of Shodan's extensive database. it offers multiple modes and flexible queries to extract valuable insights for security assessments, reconnaissance, and threat intelligence. With colorful output and intuitive commands, ShodanX empowers users to efficiently gather and analyze data from Shodan's facets, enhancing their cybersecurity efforts.
 
-### Overview
+### Why ShodanX
 
-ShodanX leverages the capabilities of Shodan's API to provide users with comprehensive information about their target without any API key required. Whether you're conducting security assessments, reconnaissance, or threat intelligence gathering, ShodanX equips you with the tools needed to extract and analyze data effectively.
+ShodanX is more useful for everyone compared to Shodan because it doesn't require paid API keys. This means anyone can access Shodan's database of internet-connected devices without having to pay for it. It's like getting the benefits of Shodan for free, making it accessible to a wider range of users. Plus, ShodanX provides real-time query results, so you can get the latest information quickly and easily. Overall, it's a more convenient and cost-effective option for anyone interested in network reconnaissance and security analysis.
+
+
+https://github.com/sanjai-AK47/ShodanX/assets/119435129/dd878027-4580-4127-b1af-dcd74a1a1727
+
 
 ### Features
 
