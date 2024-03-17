@@ -7,9 +7,6 @@ ShodanX ⚡ is a versatile information gathering tool that harnesses the power o
 ShodanX is more useful for everyone compared to Shodan because it doesn't require paid API keys. This means anyone can access Shodan's database of internet-connected devices without having to pay for it. It's like getting the benefits of Shodan for free, making it accessible to a wider range of users. Plus, ShodanX provides real-time query results, so you can get the latest information quickly and easily. Overall, it's a more convenient and cost-effective option for anyone interested in network reconnaissance and security analysis.
 
 
-https://github.com/sanjai-AK47/ShodanX/assets/119435129/dd878027-4580-4127-b1af-dcd74a1a1727
-
-
 ### Features
 
 - **Versatile Modes**: ShodanX offers various modes to cater to different use cases, including organization search, domain search, SSL certificate search, custom queries, and more.
