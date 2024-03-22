@@ -7,16 +7,16 @@ reset = Style.RESET_ALL
 
 #still doesn't have idea how to show updatelog like PD so I tried in this way LOL
 
-print(f"[{bold}{white}INFO{reset}]: {bold}{white}Updates of ShodanX V1.0.1{reset}")
+print(f"[{bold}{blue}INFO{reset}]: {bold}{white}Updates of ShodanX V1.0.1{reset}")
 
 print(f"""
-[{bold}{white}INFO{reset}]: {bold}{white}New Modes:
+[{bold}{blue}INFO{reset}]: {bold}{white}New Modes:
     
         - Subdomain --> Mode used for subdomain enumeration using shodan database for ShodanX
         
         - CIDR      --> Mode used for CIDR queries using shodan database for ShodanX{reset}
         
-[{bold}{white}INFO{reset}]: {bold}{white}Performance Improved
+[{bold}{blue}INFO{reset}]: {bold}{white}Performance Improved
 
     - Improved queries accuracy for user query
     - Removed logical bugs
