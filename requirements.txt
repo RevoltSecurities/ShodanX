@@ -8,3 +8,4 @@ fake_useragent>=1.2.1
 Requests>=2.31.0
 urllib3>=1.26.18
 lxml>=5.1.0
+appdirs>=1.4.4
