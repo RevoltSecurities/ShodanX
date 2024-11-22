@@ -1,6 +1,6 @@
 aiodns>=3.1.1
 aiofiles>=23.2.1
-aiohttp>=3.9.4
+aiohttp>=3.10.11
 alive_progress>=3.1.4
 appdirs>=1.4.4
 arsenic>=21.8
