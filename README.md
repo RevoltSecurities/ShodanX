@@ -1,126 +1,200 @@
-# ShodanX
+## ShodanX⚡ – A terminal-powered recon and OSINT tool built on top of the Shodan Services.
 
-ShodanX ⚡ is a versatile information gathering tool that harnesses the power of Shodan's extensive database. it offers multiple modes and flexible queries to extract valuable insights for security assessments, reconnaissance, and threat intelligence. With colorful output and intuitive commands, ShodanX empowers users to efficiently gather and analyze data from Shodan's facets, enhancing their cybersecurity efforts. Do you Love this project ShodanX⚡ then support the Shodanx by sharing to others
-and give a ⭐ for it.
-
-### Why ShodanX
-
-ShodanX is more useful for everyone compared to Shodan because it doesn't require paid API keys. This means anyone can access Shodan's database of internet-connected devices without having to pay for it. It's like getting the benefits of Shodan for free, making it accessible to a wider range of users. Plus, ShodanX provides real-time query results, so you can get the latest information quickly and easily. Overall, it's a more convenient and cost-effective option for anyone interested in network reconnaissance and security analysis.
+<h1 align="center">
+  <img src="static/shodanx.png" alt="shodanx" width="450px" height="500px">
+  <br>
+</h1>
 
 
-### Features in V1.0.1
+<p align="center">
+    <a href="https://github.com/RevoltSecurities/shodanx?tab=readme-ov-file#features">Features</a> |
+    <a href="https://github.com/RevoltSecurities/shodanx?tab=readme-ov-file#installation">Installation</a> |
+    <a href="https://github.com/RevoltSecurities/shodanx?tab=readme-ov-file#usage">Usage</a> |
+    <a href="https://github.com/RevoltSecurities/shodanx?tab=readme-ov-file#post-installation">Post Installation Setup</a>
+</p>
 
-- **New Modes**: Introducing two new modes `subdomain` & `cidr` 
-  
-- **Query Performance**: Improved the query performance to get accurate results for user queries
-  
-- **Mode enchancement**: Remastered the update mode to update the shodanx for upcoming versions
+![GitHub last commit](https://img.shields.io/github/last-commit/RevoltSecurities/ShodanX) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/RevoltSecurities/shodanX) [![GitHub license](https://img.shields.io/github/license/RevoltSecurities/ShodanX)](https://github.com/RevoltSecurities/ShodanX/blob/main/LICENSE)
 
-- **New Command**: Introduced the new flag `--show-update` in update to know the updates in latest versions
 
-### About ShodanX:
+### Features🔧:
+---
 
-Shodanx ⚡ is a great tool and its uses the shodan facet data then extracts results for given targets by user and ShodanX is fully upto users queries. By making a 
-super queries and use good facets queries to get more results about your targets, users can use different modes with proper shodan facets for queries to get lot 
-of information about your target.
+<h1 align="center">
 
-### ShodanX queries:
+<img src="https://github.com/RevoltSecurities/shodanx">
+<br>
+</h1>
 
-ShodanX ⚡ potential depends on how user using it with their queries and these queries can be improved by building more queries with your results
-and to know more about queries , Please refere [here](https://www.shodan.io/search/filters) and also refer the analytics queries which you can find [here](https://www.shodan.io/search/facet?query=&facet=asn)
-by understanding these queries and references you can use the shodanx with its full potentials.
 
-## Installation
+* `🔐 shodanx auth` – Configure and store your Shodan API key securely.
+* `🔓 shodanx login` – Validate your access level and API key status.
+* `🏢 shodanx org` – Perform organization-wide scans using Shodan’s powerful facets.
+* `🌐 shodanx domain` – Enumerate domain-related metadata, open ports, and host exposures.
+* `📡 shodanx subdomain` – Discover passive subdomains via Shodan’s DNS intel.
+* `🔒 shodanx ssl` – Track reused or expired SSL certificates via fingerprint searches.
+* `🎯 shodanx custom` – Run advanced Shodan dorks and custom filter queries.
+* `📦 shodanx internetdb` – Use Shodan’s lightweight InternetDB for quick IP/domain analysis.
+* `🗺️ shodanx map` – Visualize geographic distribution of exposed services and ports.
+* `🧬 shodanx cvedb` – Map hosts to known vulnerabilities using the CVE database.
+* `🏭 shodanx entitydb` – Explore technologies, software, and vendors across exposed systems.
+* `🌍 shodanx exposuredb` – Identify publicly exposed assets and data leaks by country.
+* `🖼️ shodanx faviconmap` – Track systems by unique favicons for lateral discovery.
+* `📈 shodanx trends` – Analyze exposure trends over time (Enterprise access required).
 
-To install ShodanX, simply use pip:
+---
+
+
+## Installation🚀
+
+shodanx can be easily installed using **pip**
+
 
 ```bash
-pip install git+https://github.com/sanjai-AK47/ShodanX
+pip install git+https://github.com/RevoltSecurities/ShodanX --break-system-packages
 ```
 
-### Usage
+> ✅ Make sure you have Python 3.13 or newer installed.  
 
-ShodanX provides a command-line interface (CLI) with intuitive commands for seamless interaction. Here are some of the available commands:
-
-- `shodanx org`: Search for information related to an organization.
-- `shodanx domain`: Perform a domain search to gather relevant data.
-- `shodanx ssl`: Search for SSL certificates using custom queries.
-- `shodanx subdomain`: Search for subdomain from shodan database
-- `shodanx cidr`: Search for information related to cidr/subnet from shodan database
-- `shodanx custom`: Execute custom queries tailored to your needs.
-- `shodanx update`: Check for updates and install the latest version from GitHub and PYPI.
-
-For detailed usage instructions and command options, refer to the help menu:
+  
+### Usage:
+---
+```code
+shodanx -h
+```
 
 ```yaml
- shodanx -h
-        __           __               _  __
-  ___  / /  ___  ___/ / ___ _  ___   | |/_/
- (_-< / _ \/ _ \/ _  / / _ `/ / _ \ _>  <  
-/___//_//_/\___/\_,_/  \_,_/ /_//_//_/|_|  
-                                           
+   _____    __                __                   _  __
+  / ___/   / /_   ____   ____/ /  ____ _   ____   | |/ /
+  \__ \   / __ \ / __ \ / __  /  / __ `/  / __ \  |   / 
+ ___/ /  / / / // /_/ // /_/ /  / /_/ /  / / / / /   |  
+/____/  /_/ /_/ \____/ \__,_/   \__,_/  /_/ /_/ /_/|_|  
+                                                        
 
-    
-                     Author : D.SanjaiKumar @CyberRevoltSecurities
+                     - RevoltSecurities
 
+╭───────────────────────╮
+│                       │
+│    SHODANX ⚡ HELP    │
+│                       │
+╰───────────────────────╯
+DESCRIPTION
 
-[DESCRIPTION]: ShodanX is a tool to gather information of targets using shodan dorks⚡.
-          
-[MODES]: 
-                                  
+ShodanX is a terminal-powered recon and OSINT tool built on top of the Shodan Services.
+It empowers ethical hackers and red teamers to identify exposed infrastructure,
+search CVEs, map attack surfaces, and run internet-wide queries in real time.
 
-    - org         : Org mode to search the data of an organization with different types of facet in shodan
-    - domain      : Domain mode to search the data of a domain with different types of facet in shodan
-    - subdomain   : Subdomain mode to search the subdomain of the domain from shodan database
-    - cidr        : CIDR mode to search data using the CIDR search query with different types of facet in shodan
-    - ssl         : SSL modoe to search data using the ssl search query with different types of facet in shodan
-    - custom      : Custom search mode to search with custom search with different types of facet shodan
-    - update      : Update the ShodanX to latest version 
-    
-[FLAGS]: 
+MODES (shodanx <mode>)
 
-    -h,  --help   : Shows this help message and exits.
-              
-[Usage]: 
-          
-        shodanx [commands]
-        
-        Available Commands:
-    
-            - org         : Executes the shodanX org mode for information gathering
-            - domain      : Executes the shodanX domain mode for information gathering
-            - subdomain   : Executes the shodanX subdomain enumeration query mode for information gathering
-            - cidr        : Executes the cidr query mode forinformation gathering
-            - ssl         : Executes the shodanX ssl query mode for information gathering
-            - custom      : Executes the shodanX Custom search query mode for information gathering
-            - update      : Update the ShodanX to latest version 
-            
-        Help Commands:
-        
-            - org         : shodanx org -h
-            - domain      : shodanx domain -h
-            - subdomain   : shodanx subdomain -h
-            - cidr        : shodanx cidr -h
-            - ssl         : shodanx ssl -h
-            - custom      : shodanx custom -h
-            - update      : shodanx update -h
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Mode       ┃ Description                                                      ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ auth       │ Configure and save your Shodan API key for authenticated access. │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ login      │ Verify your ShodanX access level and API key validity.           │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ org        │ Perform organization-wide scans using Shodan facets.             │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ domain     │ Enumerate metadata, ports, and host exposure for a domain.       │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ subdomain  │ Discover passive subdomains using Shodan’s DNS data.             │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ ssl        │ Search by SSL fingerprint to track reused/expired certs.         │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ custom     │ Execute advanced queries using Shodan filters and dorks.         │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ internetdb │ Lightweight analysis of IPs/domains via Shodan InternetDB API.   │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ map        │ Visualize geo-distribution of exposed services and ports.        │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ cvedb      │ Identify vulnerable systems via Shodan’s CVE database.           │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ entitydb   │ Explore technologies/vendors via Shodan’s EntityDB.              │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ exposuredb │ Discover globally exposed assets and leaks by country.           │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ faviconmap │ Find systems using specific favicons via Shodan FaviconMap.      │
+├────────────┼──────────────────────────────────────────────────────────────────┤
+│ trends     │ View historical exposure trends (Shodan Enterprise required).    │
+└────────────┴──────────────────────────────────────────────────────────────────┘
+FLAGS
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Flag       ┃ Description                      ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ -h, --help │ Show this help message and exit. │
+└────────────┴──────────────────────────────────┘
+USAGE
+shodanx <mode> 
+
+DETAILS
+ shodanx auth        → Configure and save your Shodan API key for authenticated access. 
+ shodanx login       → Verify your ShodanX access level and API key validity.           
+ shodanx org         → Perform organization-wide scans using Shodan facets.             
+ shodanx domain      → Enumerate metadata, ports, and host exposure for a domain.       
+ shodanx subdomain   → Discover passive subdomains using Shodan’s DNS data.             
+ shodanx ssl         → Search by SSL fingerprint to track reused/expired certs.         
+ shodanx custom      → Execute advanced queries using Shodan filters and dorks.         
+ shodanx internetdb  → Lightweight analysis of IPs/domains via Shodan InternetDB API.   
+ shodanx map         → Visualize geo-distribution of exposed services and ports.        
+ shodanx cvedb       → Identify vulnerable systems via Shodan’s CVE database.           
+ shodanx entitydb    → Explore technologies/vendors via Shodan’s EntityDB.              
+ shodanx exposuredb  → Discover globally exposed assets and leaks by country.           
+ shodanx faviconmap  → Find systems using specific favicons via Shodan FaviconMap.      
+ shodanx trends      → View historical exposure trends (Shodan Enterprise required).
+
 ```
 
-### Contribution and Support
+### Post Installation:
 
-ShodanX is an open-source project hosted on GitHub. Contributions, bug reports, and feature requests are welcome. Feel free to explore the repository, submit issues, or contribute code to enhance ShodanX's capabilities.
+Once you've successfully installed `shodanx`, follow these quick steps to get fully authenticated and ready to scan:
 
-For support or inquiries, please visit the [ShodanX GitHub page](https://github.com/sanjai-AK47/ShodanX).
+### 1. 🔑 Authenticate Your Shodan API Key
 
-### Abou the Author
+Start by running the `auth` command to securely store your credentials:
 
-ShodanX is developed by [D.Sanjai Kumar](https://www.linkedin.com/in/d-sanjai-kumar-109a7227b) Yeah its Me!, Hey Guys Im a developer of these tools which helps you in Security assessments, Information gathering and etc., ShodanX ⚡ is a tool that make your information gathering on shodan very easy and its help every people who are in CyberSecurity Field
+```bash
+shodanx auth
+```
 
-ShodanX is an open-source project hosted on GitHub. Contributions, bug reports, and feature requests are welcome. Feel free to explore the repository, submit issues, or contribute code to enhance ShodanX's capabilities.
+You'll be prompted to enter:
 
-For support or inquiries, please visit the ShodanX GitHub page.
+* **Username** – for local session identification
+* **Password** – used for encrypting your local credentials
+* **Shodan API Key** – required for authenticated access to most Shodan services
 
-## License
+> ✅ **Security Note:** All your sensitive inputs (username, password, API key) are securely stored in your local user shodanx configuration file. No external calls or storage are involved during this setup.
 
-ShodanX is licensed under the MIT License. See the [LICENSE](https://github.com/sanjai-AK47/ShodanX/blob/main/LICENSE) file for details.
+### 2. 🧠 Session Login via Shodan Web Cookie
 
+Next, run the `login` command to authenticate against Shodan’s session-protected endpoints:
+
+```bash
+shodanx login
+```
+
+You'll be asked to paste your **active Shodan session cookie** (copied as a single string) from:
+
+* Browser Dev Tools → Application → Cookies → `.shodan.io`
+* OR intercept it via **Burp Suite** / **Proxy tools**
+
+Paste the session string when prompted. This is used for advanced session-based features.
+
+
+### 3. 🚀 You're Ready!
+
+You now have access to the full `shodanx` suite of modules.
+
+> 💡 **Note:** Certain modules like `trends`  require a **Shodan Enterprise** API key for access to premium data visualizations and trend insights and `map` require a **Shodan's** high level subscription account cookie 
+
+---
+
+
+## Acknowledgements
+
+**ShodanX** is built with ❤️ by **[RevoltSecurities](https://github.com/RevoltSecurities)** — for hackers, by hackers.
+
+We deeply appreciate all the users who trust ShodanX for automating and enhancing their cybersecurity workflows. Your usage, feedback, and support drive the continued evolution of this powerful tool.
+Thank you for choosing ShodanX to power your recon, enumeration, and exploitation efforts.
+
+> Stay ethical. Stay sharp. Stay ahead.
+> — *With respect, the RevoltSecurities*
+---
