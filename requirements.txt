@@ -1,0 +1,14 @@
+aiodns>=3.2.0
+aiofiles>=24.1.0
+appdirs>=1.4.4
+art>=6.5
+beautifulsoup4>=4.13.4
+click>=8.2.0
+colorama>=0.4.6
+fake_useragent>=2.0.3
+httpx>=0.28.1
+PyYAML>=6.0.2
+rich>=14.0.0
+setuptools>=78.1.0
+lxml>=5.3.2
+bs4>=0.0.2
