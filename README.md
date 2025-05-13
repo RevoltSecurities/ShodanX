@@ -1,7 +1,7 @@
 ## ShodanX⚡ – A terminal-powered recon and OSINT tool built on top of the Shodan Services.
 
 <h1 align="center">
-  <img src="static/shodanx.png" alt="shodanx" width="450px" height="500px">
+  <img src="static/Shodanx.png" alt="shodanx" width="450px" height="500px">
   <br>
 </h1>
 
