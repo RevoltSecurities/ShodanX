@@ -352,13 +352,13 @@ class ShodanX:
                 
                 zipurl = await self.git.fetch_latest_zip_url()
                 if not zipurl:
-                    self.logger.warn("unable to get the latest source code of RAI")
+                    self.logger.warn("unable to get the latest source code of ShodanX")
                     return
                 
                 await self.git.download_and_install(zipurl)
                 newpypi = self.git.current_version()
                 if newpypi == self.pypi:
-                    self.logger.warn("unable to update RAI to the latest version, please try manually")
+                    self.logger.warn("unable to update ShodanX to the latest version, please try manually")
                     return
                 
                 self.logger.info(f"ShodanX has been updated to version")
