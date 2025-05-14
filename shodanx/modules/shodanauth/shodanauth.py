@@ -127,6 +127,58 @@ class ShodanAuth():
             return False
         return True
     
+    async def shell(self) -> dict:
+        console = Console()
+        
+        welcome_panel = Panel.fit(
+            Text("Welcome to Shodanx Auth Configuration Mode\nPlease Config your Shodan Credentials for ShodanX", 
+                 style="bold green"),
+            title="[bold blue]ShodanX Authentication Setup[/]",
+            border_style="bright_blue",
+            padding=(1, 4),
+            style="bold white"
+        )
+        console.print(welcome_panel)
+
+        try:
+            username = input("Enter your Shodan username: ")
+            password = getpass.getpass("Enter your Shodan password (hidden): ")
+            api_key = getpass.getpass("Enter your Shodan API key (hidden): ")
+            
+            if not all([username, password, api_key]):
+                console.print("[bold red]Error: All fields are required![/]")
+                return None
+
+            confirmation_text = Text()
+            confirmation_text.append(f"Username : {username}\n", style="bold cyan")
+            confirmation_text.append(f"Password : {'*' * len(password)}\n", style="bold magenta")
+            confirmation_text.append(f"API Key  : {'*' * len(api_key)}\n\n", style="bold yellow")
+            confirmation_text.append("Please verify these details are correct.", style="bold green")
+
+            confirmation_panel = Panel.fit(
+                confirmation_text,
+                title="[bold green]Confirmation[/]",
+                border_style="bright_green",
+                padding=(1, 4)
+            )
+            console.print(confirmation_panel)
+
+            confirm = input("Are these details correct? (y/n): ").lower()
+            if confirm != 'y':
+                console.print("[bold yellow]Configuration aborted[/]")
+                return None
+
+            return {
+                'username': username,
+                'password': password,
+                'apikey': api_key,
+            }
+        except KeyboardInterrupt:
+            console.print("\n[bold red]Input cancelled by user[/]")
+            return None
+        except Exception as e:
+            console.print(f"[bold red]Error during input: {e}[/]")
+    
     async def shell_login(self):
         console = Console()
         welcome_panel = Panel.fit(
