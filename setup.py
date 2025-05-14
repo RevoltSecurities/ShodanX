@@ -5,7 +5,7 @@ with open("README.md", "r") as streamr:
 
 setup(
     name='shodanx',
-    version='1.1.0',
+    version='1.1.1',
     author='D.Sanjai Kumar',
     author_email='bughunterz0047@gmail.com',
     description='ShodanX is a terminal-powered recon and OSINT tool built on top of the Shodan Services.',
